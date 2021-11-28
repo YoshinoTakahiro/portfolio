@@ -1,0 +1,673 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600;700;900&family=Rampart+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    cursor: none;
+}
+
+html{
+    background-color: whitesmoke;
+    font-family: 'Noto Serif JP', serif;
+    overflow-x : hidden;
+    overflow-y : auto
+}
+
+body{
+    padding-top: 144px;
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+header #title{
+    margin-left: 50px;
+    font-size: 60px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Rampart One', cursive;
+}
+
+header nav ul{
+    display: flex;
+    margin-right: 50px;
+}
+
+header nav ul li{
+    margin-right: 50px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: #333;
+}
+
+
+.fv{
+    /* background-color: gray; */
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    font-size: 20px;
+    color: #333;
+}
+
+.fv p a{
+    text-decoration: none;
+    color: #333;
+}
+
+
+main{
+    width: 100%;
+    height: auto;
+    /* background-color: yellow; */
+    margin-bottom: 200px;
+}
+
+main .profile{
+    width: 80%;
+    height: 500px;
+    margin: auto;
+    /* background-color: white; */
+    padding: 30px;
+}
+
+main .profile h2{
+    margin-top: 50px;
+    font-family: 'Rampart One', cursive;
+    font-size: 40px;
+    text-align: center;
+}
+
+
+main .profile .probox{
+    display: flex;
+    justify-content: center;
+}
+
+main .profile .probox .box{
+    width: 40%;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    /* background-color: gray; */
+}
+
+main .profile .probox .box:first-child{
+    background-image: url(../img/test.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+main .profile .probox .box:last-child{
+    padding-left: 50px;
+    padding-right: 50px;
+    /* background-color: whitesmoke; */
+}
+
+main .profile .probox .box:last-child h3{
+    font-size: 40px;
+}
+
+main .profile .probox .box:last-child h4{
+    font-size: 20px;
+}
+
+main .profile .probox .box:last-child h5{
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+main .profile .probox .box:last-child p{
+    margin-top: 30px;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+
+}
+
+
+
+#first{
+    width: 80%;
+    height: auto;
+    /* background-color: gray; */
+    margin: auto;
+}
+
+#first .me{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+
+#first .me .box:first-child{
+    width: 40%;
+    height: 30vh;
+    /* background-color: #333; */
+}
+
+#first .me .box:first-child h3{
+    margin: 10px;
+    font-size: 25px;
+    font-family: 'Rampart One', cursive;
+    color: #333;
+
+}
+#first .me .box:first-child h2{
+    margin: 10px;
+    font-size: 50px;
+    letter-spacing: 0.2em;
+    font-family: 'Rampart One', cursive;
+    color: #333;
+}
+
+#first .me .box:last-child{
+    width: 60%;
+    height: 30vh;
+    /* background-color: indianred; */
+}
+
+#first .me .box:last-child p{
+    margin-top: 60px;
+    font-size: 18px;
+    line-height: 160%;
+}
+
+
+
+
+
+
+#first .skil{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 150px;
+
+}
+
+#first .skil .box:first-child{
+    width: 40%;
+    height: 30vh;
+    /* background-color: #333; */
+}
+
+#first .skil .box:first-child h3{
+    margin: 10px;
+    font-size: 25px;
+    font-family: 'Rampart One', cursive;
+    color: #333;
+
+}
+#first .skil .box:first-child h2{
+    margin: 10px;
+    font-size: 50px;
+    letter-spacing: 0.2em;
+    font-family: 'Rampart One', cursive;
+    color: #333;
+}
+
+
+
+
+#first .skil .box:last-child{
+    width: 60%;
+    height: 30vh;
+    /* background-color: indianred; */
+}
+
+#first .skil .box:last-child h3{
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+
+
+
+#first .capacity{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 150px;
+
+}
+
+#first .capacity .box:first-child{
+    width: 40%;
+    height: 30vh;
+    /* background-color: #333; */
+}
+
+#first .capacity .box:first-child h3{
+    margin: 10px;
+    font-size: 25px;
+    font-family: 'Rampart One', cursive;
+    color: #333;
+
+}
+#first .capacity .box:first-child h2{
+    margin: 10px;
+    font-size: 50px;
+    letter-spacing: 0.2em;
+    font-family: 'Rampart One', cursive;
+    color: #333;
+}
+
+
+#first .capacity .box:last-child{
+    width: 60%;
+    height: 30vh;
+    /* background-color: indianred; */
+}
+
+#first .capacity .box:last-child h3{
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+
+
+
+
+#first .history{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 150px;
+
+}
+
+#first .history .box:first-child{
+    width: 40%;
+    height: 30vh;
+    /* background-color: #333; */
+}
+
+#first .history .box:first-child h3{
+    margin: 10px;
+    font-size: 25px;
+    font-family: 'Rampart One', cursive;
+    color: #333;
+
+}
+#first .history .box:first-child h2{
+    margin: 10px;
+    font-size: 50px;
+    letter-spacing: 0.2em;
+    font-family: 'Rampart One', cursive;
+    color: #333;
+}
+
+
+#first .history .box:last-child{
+    width: 60%;
+    height: 30vh;
+    /* background-color: indianred; */
+}
+
+#first .history .box:last-child h3{
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+
+footer{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+    /* background-color: #fff; */
+}
+
+
+
+
+/*=== 9-1-4 矢印が動いてスクロールを促す  ====*/
+
+/*スクロールダウン全体の場所*/
+.scrolldown4{
+    /*描画位置※位置は適宜調整してください*/
+  position:absolute;
+  bottom:10%;
+  left:10%;
+    /*矢印の動き1秒かけて永遠にループ*/
+  animation: arrowmove 1s ease-in-out infinite;
+}
+
+/*下からの距離が変化して全体が下→上→下に動く*/
+@keyframes arrowmove{
+      0%{bottom:10%;}
+      50%{bottom:8%;}
+     100%{bottom:10%;}
+ }
+
+/*Scrollテキストの描写*/
+.scrolldown4 span{
+    /*描画位置*/
+  position: absolute;
+  left:-20px;
+  bottom:10px;
+    /*テキストの形状*/
+  color: #333;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  /*縦書き設定*/
+  -ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+}
+
+/* 矢印の描写 */
+.scrolldown4:before {
+    content: "";
+    /*描画位置*/
+    position: absolute;
+    bottom: 0;
+    right: -6px;
+    /*矢印の形状*/
+    width: 1px;
+    height: 20px;
+    background: #333;
+    transform: skewX(-31deg);
+}
+
+.scrolldown4:after{
+  content:"";
+    /*描画位置*/
+  position: absolute;
+  bottom:0;
+  right:0;
+    /*矢印の形状*/
+  width:1px;
+  height: 50px;
+  background:#333;
+}
+
+
+@media screen and (min-width: 1601px) {
+    html{
+        max-width: 1600px;
+        margin: auto;
+    }
+    header{
+        width: 100%;
+        height: 104px;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
+    }
+    
+    header #title{
+        margin-left: 100px;
+        font-size: 60px;
+        text-decoration: none;
+        color: black;
+        font-family: 'Rampart One', cursive;
+    }
+    
+    header nav ul{
+        display: flex;
+        margin-right: 100px;
+    }
+    
+    header nav ul li{
+        margin-right: 50px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    
+    header nav ul li a{
+        text-decoration: none;
+        color: #333;
+    }    
+
+    main{
+        width: 100%;
+        height: auto;
+        /* background-color: yellow; */
+        margin-bottom: 200px;
+    }
+    
+    main .profile{
+        width: 80%;
+        height: 500px;
+        margin: auto;
+        /* background-color: white; */
+        padding: 30px;
+    }
+    
+
+    #first{
+        width: 70%;
+        height: auto;
+        /* background-color: gray; */
+        margin: auto;
+    }
+    
+    #first .me{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 150px;
+    }
+    
+    #first .me .box:first-child{
+        width: 40%;
+        height: 30vh;
+        /* background-color: #333; */
+    }
+    
+    #first .me .box:first-child h3{
+        margin: 10px;
+        font-size: 25px;
+        font-family: 'Rampart One', cursive;
+        color: #333;
+    
+    }
+    #first .me .box:first-child h2{
+        margin: 10px;
+        font-size: 50px;
+        letter-spacing: 0.2em;
+        font-family: 'Rampart One', cursive;
+        color: #333;
+    }
+    
+    #first .me .box:last-child{
+        width: 60%;
+        height: 30vh;
+        /* background-color: indianred; */
+    }
+    
+    #first .me .box:last-child p{
+        margin-top: 60px;
+        font-size: 18px;
+        line-height: 160%;
+    }
+    
+    
+    
+    
+    
+    
+    #first .skil{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 150px;
+    
+    }
+    
+    #first .skil .box:first-child{
+        width: 40%;
+        height: 30vh;
+        /* background-color: #333; */
+    }
+    
+    #first .skil .box:first-child h3{
+        margin: 10px;
+        font-size: 25px;
+        font-family: 'Rampart One', cursive;
+        color: #333;
+    
+    }
+    #first .skil .box:first-child h2{
+        margin: 10px;
+        font-size: 50px;
+        letter-spacing: 0.2em;
+        font-family: 'Rampart One', cursive;
+        color: #333;
+    }
+    
+    
+    
+    
+    #first .skil .box:last-child{
+        width: 60%;
+        height: 30vh;
+        /* background-color: indianred; */
+    }
+    
+    #first .skil .box:last-child h3{
+        margin-top: 30px;
+        font-size: 25px;
+    }
+    
+    
+    
+    
+    #first .capacity{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 150px;
+    
+    }
+    
+    #first .capacity .box:first-child{
+        width: 40%;
+        height: 30vh;
+        /* background-color: #333; */
+    }
+    
+    #first .capacity .box:first-child h3{
+        margin: 10px;
+        font-size: 25px;
+        font-family: 'Rampart One', cursive;
+        color: #333;
+    
+    }
+    #first .capacity .box:first-child h2{
+        margin: 10px;
+        font-size: 50px;
+        letter-spacing: 0.2em;
+        font-family: 'Rampart One', cursive;
+        color: #333;
+    }
+    
+    
+    #first .capacity .box:last-child{
+        width: 60%;
+        height: 30vh;
+        /* background-color: indianred; */
+    }
+    
+    #first .capacity .box:last-child h3{
+        margin-top: 30px;
+        font-size: 25px;
+    }
+    
+    
+    
+    
+    
+    #first .history{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 150px;
+    
+    }
+    
+    #first .history .box:first-child{
+        width: 40%;
+        height: 30vh;
+        /* background-color: #333; */
+    }
+    
+    #first .history .box:first-child h3{
+        margin: 10px;
+        font-size: 25px;
+        font-family: 'Rampart One', cursive;
+        color: #333;
+    
+    }
+    #first .history .box:first-child h2{
+        margin: 10px;
+        font-size: 50px;
+        letter-spacing: 0.2em;
+        font-family: 'Rampart One', cursive;
+        color: #333;
+    }
+    
+    
+    #first .history .box:last-child{
+        width: 60%;
+        height: 30vh;
+        /* background-color: indianred; */
+    }
+    
+    #first .history .box:last-child h3{
+        margin-top: 30px;
+        font-size: 25px;
+    }
+
+    footer{
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        text-align: center;
+        /* background-color: #fff; */
+    }
+    
+    
+}
+
+
+
+
+
+#cursor {
+    transform: translate(0, 0);
+    pointer-events: none;
+    position: fixed;
+    top: -4px;
+    left: -4px;
+    width: 8px;
+    height: 8px;
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 50%;
+    z-index: 9999;
+    transition: width 0.3s, height 0.3s, top 0.3s, left 0.3s;
+}
+#cursor.hov_ {
+    top: -12px;
+    left: -12px;
+    width: 32px;
+    height: 32px;
+    background: rgba(223, 148, 148, 0.75);
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>プロフィール</title>
+        <link rel="stylesheet" href="./css/profile.css">
+        <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    </head>
+    <body>
+
+        <div id="cursor"></div>
+
+        <header>
+            <a href="index.html" id="title">Portfolio</a>
+            <nav>
+                <ul>
+                    <li><a href="./profile.html">Profile</a></li>
+                    <li><a href="#">My Works</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="fv">
+
+            <p><i class="fas fa-home"></i>　<a href="index.html">HOME</a>　/　Profile</p>
+
+        </div>
+
+        <main>
+
+            <div class="profile">
+                <h2>PROFILE</h2>
+
+                <div class="probox">
+                    <div class="box">
+                    </div>
+
+                    <div class="box">
+                        <h3>吉野　貴大</h3>
+                        <h4>Yoshino　Takahiro</h4>
+                        <h5>
+                            HAL大阪　高度情報学科
+                            <br>
+                            WEB開発専攻　23年卒業予定
+                        </h5>
+                        <p>
+                            関西に住んでいるHAL大阪３回生の吉野貴大です。
+                            <br>
+                            WEBデザインやUIデザインを考えたり、作成したりするのが大好きです。
+                            インプット・アウトプットを続けて常に新しいことにチャレンジしています。
+                            <br>
+                            どうぞよろしくお願いします。
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+
+        <div class="scrolldown4">
+            <span>Scroll</span>
+        </div>
+
+        <article id="first">
+
+            <section class="me">
+
+                <div class="box">
+                    <h3>今の自分について</h3>
+                    <h2>
+                        チーム制作で
+                        <br>
+                        仲間と協力
+                    </h2>
+
+                </div>
+                <div class="box">
+                    <p>
+                        学内コンテストやU22プログラムコンテストの作品をチームで制作しました。<br>
+                        デザインリーダーに任命され、自分のやるべきことだけでなく、<br>
+                        チーム全体を広い視野で観察し、遅れている部分があれば、積極的にサポートに入りました。<br>
+                        チームで協力する事で作品が完成し、チーム制作の楽しさが分かりました。
+                    </p>
+                </div>
+
+            </section>
+
+            <section class="skil">
+
+                <div class="box">
+                    <h3>スキル</h3>
+                    <h2>
+                        私のスキル
+                    </h2>
+
+                </div>
+                <div class="box">
+                    <h3>XD　　Photoshop　　Illustrator</h3>
+                    <h3>Figma　　HTML　　CSS</h3>
+                    <h3>JavaScript　　PHP</h3>
+                </div>
+
+            </section>
+
+            <section class="capacity">
+
+                <div class="box">
+                    <h3>資格</h3>
+                    <h2>
+                        勉強
+                    </h2>
+
+                </div>
+                <div class="box">
+                    <h3>基本情報技術者試験</h3>
+                    <h3>情報処理活用能力検定２級</h3>
+                    <h3>WEBデザイナー検定ベーシック</h3>
+                </div>
+
+            </section>
+
+
+            <section class="history">
+
+                <div class="box">
+                    <h3>受賞歴</h3>
+                    <h2>
+                        コンテスト
+                        <br>
+                        受賞歴
+                    </h2>
+
+                </div>
+                <div class="box">
+                    <h3>
+                        2019　三校合同コンテスト
+                        <br>
+                        　　　　構成力賞　受賞　
+                    </h3>
+                    <h3>
+                        2020　HAL大阪　HAL・EVENT・WEEK
+                        <br>
+                        　　　　構成力賞　受賞
+                    </h3>
+                    <h3>
+                        2021　HAL大阪　HAL・EVENT・WEEK
+                        <br>
+                        　　　　銅賞　受賞
+                    </h3>
+                </div>
+
+            </section>
+    
+
+        </article>
+
+        <footer>
+            &copy;　2021　Yoshino Takahiro
+        </footer>
+
+
+        
+        <script>
+            //準備
+            let cursorR = 4;  //カーソルの半径
+            const cursor = document.getElementById('cursor');  //カーソル用のdivを取得
+
+            //上記のdivタグをマウスに追従させる処理
+            document.addEventListener('mousemove', function (e) {
+                cursor.style.transform = 'translate(' + e.clientX + 'px, ' + e.clientY + 'px)';
+            });
+
+            //リンクにホバー時はクラスをつける
+            const linkElem = document.querySelectorAll('a');
+            for (let i = 0; i < linkElem.length; i++) {
+                linkElem[i].addEventListener('mouseover', function (e) {
+                    cursor.classList.add('hov_');
+                });
+                linkElem[i].addEventListener('mouseout', function (e) {
+                    cursor.classList.remove('hov_');      
+                });
+            }
+        </script>
+
+
+    </body>
+</html>

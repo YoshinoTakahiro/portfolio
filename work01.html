@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Share Reader</title>
+        <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
+
+        <link rel="stylesheet" href="css/work01.css">
+
+    </head>
+    <body>
+
+        <div id="cursor"></div>
+
+        <header>
+            <a href="index.html" id="title">Portfolio</a>
+            <nav>
+                <ul>
+                    <li><a href="./profile.html">Profile</a></li>
+                    <li><a href="#">My Works</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="fv">
+
+            <p><i class="fas fa-home"></i>　<a href="index.html">HOME</a>　/　WORK　/　Share Reader</p>
+
+        </div>
+
+
+
+    <main>
+
+        <div class="workbox">
+            <ul class="workbox_images">
+                <li><img src="./img/work01/title.png" class="workbox_images_box"></li>
+                <li><img src="./img/work01/top0.png" class="workbox_images_box"></li>
+                <li><img src="./img/work01/top1.png" class="workbox_images_box"></li>
+                <li><img src="./img/work01/top2.png" class="workbox_images_box"></li>
+
+                <li><img src="./img/work01/use_hand_over.png" class="workbox_images_box"></li>
+                <li><img src="./img/work01/use_get.png" class="workbox_images_box"></li>
+            </ul>
+
+            <div class="workbox_sentence">
+
+                    <ul class="workbox_sentence_tag">
+                        <li>受賞作品</li>
+                        <li>3年前期</li>
+                        <li>学校</li>
+                        <li>チーム制作</li>
+                    </ul>
+
+                <div class="workbox_sentence_title">
+                    <h1>Share Reader</h1>
+                    <h2>誰でも、すぐに、簡単に</h2>
+                </div>
+
+                <div class="workbox_sentence_syousai">
+
+                    <h3>私がやったこと</h3>
+                    <p>WEB・UI/UXデザイン・フロントエンド</p>
+
+                    <h3>ソースコード</h3>
+                    <p><a href="https://github.com/betacode-projects/share-reader" target="_blank">GitHub</a></p>
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+
+        
+
+
+
+        <script>
+            //準備
+            let cursorR = 4;  //カーソルの半径
+            const cursor = document.getElementById('cursor');  //カーソル用のdivを取得
+
+            //上記のdivタグをマウスに追従させる処理
+            document.addEventListener('mousemove', function (e) {
+                cursor.style.transform = 'translate(' + e.clientX + 'px, ' + e.clientY + 'px)';
+            });
+
+            //リンクにホバー時はクラスをつける
+            const linkElem = document.querySelectorAll('a');
+            for (let i = 0; i < linkElem.length; i++) {
+                linkElem[i].addEventListener('mouseover', function (e) {
+                    cursor.classList.add('hov_');
+                });
+                linkElem[i].addEventListener('mouseout', function (e) {
+                    cursor.classList.remove('hov_');      
+                });
+            }
+        </script>
+
+
+    </body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>portfolio</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
+    </head>
+    <body>
+
+        <!-- オープニングアニメーション -->
+        <div class="shutter"></div>
+
+        <div id="cursor"></div>
+
+        <header>
+            <a href="#" id="title">Portfolio</a>
+            <nav>
+                <ul>
+                    <li><a href="#profile">Profile</a></li>
+                    <li><a href="#work">My Works</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="fv">
+            <p>WEB・UI/UX デザイン</p>
+            <h3>ヨシノ　タカヒロ</h3>
+        </div>
+
+        <div class="scrolldown4">
+            <span>Scroll</span>
+        </div>
+
+
+
+        <main>
+
+            <!-- <div class="main-title">
+                <div class="took">
+                    <h2>
+                        明日を作るデザインを
+                    </h2>
+                    <p>
+                        その時の体験こそが私の経験となり、自分の力となる
+                    </p>    
+                </div>
+            </div> -->
+
+
+
+            <div class="profile" id="profile">
+                <h2>私について</h2>
+                <h5 class="en-title">Profile</h5>
+
+                <div class="probox">
+                    <div class="box">
+                    </div>
+
+                    <div class="box">
+                        <h3>吉野　貴大</h3>
+                        <h4>Yoshino　Takahiro</h4>
+
+                        <p>WEB,UI/UX Design</p>
+
+                        <p>
+                            WEBデザインやUIデザインを考えたり、作成したりするのが大好きです。
+                            インプット・アウトプットを続けて常に新しいことにチャレンジしています。
+                            <br>
+                            どうぞよろしくお願いします。
+                        </p>
+
+                        <div class="sns">
+                            <a href="https://twitter.com/takahiro29y" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+                            <a href="https://www.instagram.com/1.takahiro.1/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+                        </div>
+
+
+                    </div>    
+                </div>
+
+                <div id="btn">
+                    <a href="profile.html" class="btn btn--orange">もっと詳しく</a>
+                </div>
+
+            </div>
+
+            <div class="works" id="work">
+                <h2 class="workstitle">つくったもの</h2>
+                <h5 class="en-title">My Works</h5>
+                <div class="work01">
+
+                    <div class="work_box">
+                        <div class="work_best">
+                            <h3>誰でも、すぐに、簡単に</h3>
+                            <h2 class="work1_title">Share Reader</h2>
+                            <div class="btn_more">
+                                <a href="work01.html" class="btn_w btn_w--orange">もっと詳しく</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="work_box">
+                        <div class="work1_img">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="work02">
+
+                    <div class="work_box">
+                        <div class="work_best">
+                            <h3>誰でも、すぐに、簡単に</h3>
+                            <h2 class="work1_title">Share Reader</h2>
+                            <div class="btn_more">
+                                <a href="profile.html" class="btn_w btn_w--orange">もっと詳しく</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="work_box">
+                        <div class="work2_img">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="work03">
+
+                    <div class="work_box">
+                        <div class="work_best">
+                            <h3>誰でも、すぐに、簡単に</h3>
+                            <h2 class="work1_title">Share Reader</h2>
+                            <div class="btn_more">
+                                <a href="profile.html" class="btn_w btn_w--orange">もっと詳しく</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="work_box">
+                        <div class="work3_img">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="work04">
+
+                    <div class="work_box">
+                        <div class="work_best">
+                            <div class="btn_more">
+                                <a href="https://student.redesigner.jp/students/9c90c6be9a280dc8d7f071d9480396ac" class="btn_w btn_w--orange" target="_blank">その他の作品はこちら</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            
+
+        </main>
+
+
+        <footer>
+            &copy;　2021　Yoshino Takahiro
+        </footer>
+
+
+        
+        
+        <script>
+            //準備
+            let cursorR = 4;  //カーソルの半径
+            const cursor = document.getElementById('cursor');  //カーソル用のdivを取得
+
+            //上記のdivタグをマウスに追従させる処理
+            document.addEventListener('mousemove', function (e) {
+                cursor.style.transform = 'translate(' + e.clientX + 'px, ' + e.clientY + 'px)';
+            });
+
+            //リンクにホバー時はクラスをつける
+            const linkElem = document.querySelectorAll('a');
+            for (let i = 0; i < linkElem.length; i++) {
+                linkElem[i].addEventListener('mouseover', function (e) {
+                    cursor.classList.add('hov_');
+                });
+                linkElem[i].addEventListener('mouseout', function (e) {
+                    cursor.classList.remove('hov_');      
+                });
+            }
+        </script>
+
+    </body>
+</html>

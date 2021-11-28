@@ -1,0 +1,728 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600;700;900&family=Rampart+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    cursor: none;
+}
+
+html{
+    background-color: whitesmoke;
+    font-family: 'Noto Serif JP', serif;
+    overflow-x : hidden;
+    overflow-y : auto
+
+}
+
+body{
+    padding-top: 144px;
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    background-color: #EFEFEF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+header #title{
+    margin-left: 50px;
+    font-size: 60px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Rampart One', cursive;
+}
+
+header nav ul{
+    display: flex;
+    margin-right: 50px;
+}
+
+header nav ul li{
+    margin-right: 50px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: #333;
+}
+
+.fv{
+    width: 100px;
+    height: 75vh;
+    /* background-color: blueviolet; */
+    margin: auto;
+    margin-top: 80px;
+}
+
+.fv p{
+    margin-top: 8px;
+    float: right;
+    writing-mode: vertical-rl;
+    color: #333;
+}
+
+.fv h3{
+    writing-mode: vertical-rl;
+    font-size: 40px;
+    margin: auto;
+}
+
+
+
+
+
+/*=== 9-1-4 矢印が動いてスクロールを促す  ====*/
+
+/*スクロールダウン全体の場所*/
+.scrolldown4{
+    /*描画位置※位置は適宜調整してください*/
+  position:absolute;
+  bottom:10%;
+  left:10%;
+    /*矢印の動き1秒かけて永遠にループ*/
+  animation: arrowmove 1s ease-in-out infinite;
+}
+
+/*下からの距離が変化して全体が下→上→下に動く*/
+@keyframes arrowmove{
+      0%{bottom:10%;}
+      50%{bottom:8%;}
+     100%{bottom:10%;}
+ }
+
+/*Scrollテキストの描写*/
+.scrolldown4 span{
+    /*描画位置*/
+  position: absolute;
+  left:-20px;
+  bottom:10px;
+    /*テキストの形状*/
+  color: #333;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  /*縦書き設定*/
+  -ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+}
+
+/* 矢印の描写 */
+.scrolldown4:before {
+    content: "";
+    /*描画位置*/
+    position: absolute;
+    bottom: 0;
+    right: -6px;
+    /*矢印の形状*/
+    width: 1px;
+    height: 20px;
+    background: #333;
+    transform: skewX(-31deg);
+}
+
+.scrolldown4:after{
+  content:"";
+    /*描画位置*/
+  position: absolute;
+  bottom:0;
+  right:0;
+    /*矢印の形状*/
+  width:1px;
+  height: 50px;
+  background:#333;
+}
+
+
+
+main{
+    width: 100%;
+    /* background-color: yellow; */
+}
+
+/* 自己紹介 */
+
+main .profile{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    /* background-color: white; */
+    padding: 30px;
+    padding-top: 50px;
+}
+
+main .profile h2{
+    margin-top: 50px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+main .profile .en-title{
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+main .profile .probox{
+    display: flex;
+    justify-content: center;
+}
+
+main .profile .probox .box{
+    width: 40%;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    /* background-color: gray; */
+}
+
+main .profile .probox .box:first-child{
+    background-image: url(../img/test.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+main .profile .probox .box:last-child{
+    padding-left: 50px;
+    padding-right: 50px;
+    /* background-color: whitesmoke; */
+}
+
+main .profile .probox .box:last-child h3{
+    font-size: 40px;
+}
+
+main .profile .probox .box:last-child h4{
+    font-size: 20px;
+}
+
+main .profile .probox .box:last-child h5{
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+main .profile .probox .box:last-child p{
+    margin-top: 30px;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+}
+
+main .profile .probox .box:last-child .sns{
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+    /* background-color: aqua; */
+}
+
+main .profile .probox .box:last-child .sns i{
+    margin-right: 30px;
+}
+
+.fa-twitter{
+    color: #333;
+}
+.fa-instagram{
+    color: #333;
+}
+
+
+
+.btn,
+a.btn,
+button.btn {
+  font-size: 20px;
+  font-weight: 400;
+  padding: 5px 10px;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  border-radius: 0.5rem;
+}
+
+.btn--orange,
+a.btn--orange {
+  color: #333;
+  background-color: whitesmoke;
+  border: black solid 1px;
+}
+
+.btn--orange:hover,
+a.btn--orange:hover {
+  color: #fff;
+  background: #333;
+}
+
+#btn{
+    width: 100%;
+    text-align: center;
+}
+
+/* 自己紹介ここまで */
+
+
+
+/* 作品 */
+
+.works{
+    /* background-color: burlywood; */
+    padding-top: 50px;
+    margin-top: 100px;
+}
+
+.works .workstitle{
+    padding-top: 50px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+main .works .en-title{
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+
+.work01{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #e9ffff;
+    box-shadow: 0 0 8px gray;
+}
+
+
+.work02{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-shadow: 0 0 8px gray;
+}
+
+.work03{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    background-color: #e9ffff;
+    box-shadow: 0 0 8px gray;
+}
+
+.work04{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 8px gray;
+}
+
+
+.work_box{
+    width: 50%;
+    /* background-color: gray; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.work_best{
+    width: 90%;
+    height: auto;
+    /* background-color: aqua; */
+}
+.work_best h3{
+    text-align: center;
+    font-family: 'Noto Serif JP', serif;
+    margin: 20px;
+    font-size: 30px;
+}
+.work_best .work1_title{
+    text-align: center;
+    font-family: 'Noto Serif JP', serif;
+    margin: 20px;
+    font-size: 60px;
+}
+.work_best .btn_more{
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.btn_w,
+a.btn_w,
+button.btn_w {
+  font-size: 30px;
+  font-weight: 400;
+  padding: 5px 10px;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  border-radius: 0.5rem;
+}
+
+.btn_w--orange,
+a.btn_w--orange {
+  color: #333;
+  background-color: whitesmoke;
+  border: black solid 1px;
+}
+
+.btn_w--orange:hover,
+a.btn_w--orange:hover {
+  color: #fff;
+  background: #333;
+}
+
+.work1_img{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/web.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.work2_img{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/web.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.work3_img{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/web.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* 作品ここまで */
+
+
+
+
+
+
+
+
+
+
+
+/* 大型デスクトップ レイアウト */
+
+@media screen and (min-width: 1601px) {
+    html{
+        margin: auto;
+    }
+    header{
+        width: 100%;
+        height: 104px;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
+    }
+    
+    header #title{
+        margin-left: 100px;
+        font-size: 60px;
+        text-decoration: none;
+        color: black;
+        font-family: 'Rampart One', cursive;
+    }
+    
+    header nav ul{
+        display: flex;
+        margin-right: 100px;
+    }
+    
+    header nav ul li{
+        margin-right: 50px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    
+    header nav ul li a{
+        text-decoration: none;
+        color: #333;
+    }
+
+    .fv{
+        width: 100px;
+        height: 75vh;
+        /* background-color: blueviolet; */
+        margin: auto;
+        margin-top: 200px;
+    }
+    
+    .fv p{
+        margin-top: 8px;
+        float: right;
+        writing-mode: vertical-rl;
+        color: #333;
+    }
+    
+    .fv h3{
+        writing-mode: vertical-rl;
+        font-size: 40px;
+        margin: auto;
+    }
+
+    footer{
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        text-align: center;
+        /* background-color: #fff; */
+    }
+
+    
+}
+
+
+
+
+/* オープニングアニメーション */
+
+.shutter {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1e1e1e;
+    z-index: 9999;
+    -webkit-animation: byeShutter 1.6s forwards;
+            animation: byeShutter 1.6s forwards;
+}
+.shutter::before, .shutter::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+.shutter::before {
+    background-color: rgb(80, 80, 80);
+    width: 0;
+    height: 1px;
+    -webkit-animation: shutterOpen1 1s forwards;
+            animation: shutterOpen1 1.4s forwards;
+}
+.shutter::after {
+    width: 120%;
+    height: 0;
+    margin-left: -10%;
+    background-color: #f3f3f3;
+    -webkit-animation: shutterOpen2 1s forwards;
+            animation: shutterOpen2 1.6s forwards;
+}
+
+.content {
+    -webkit-animation: contentScale 1.6s forwards;
+            animation: contentScale 1.6s forwards;
+}
+
+@-webkit-keyframes byeShutter {
+    70% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+        z-index: -1;
+    }
+}
+
+@keyframes byeShutter {
+    70% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+        z-index: -1;
+    }
+}
+@-webkit-keyframes shutterOpen1 {
+    0% {
+        width: 0;
+        height: 1px;
+    }
+    50% {
+        width: 100%;
+        height: 1px;
+    }
+    90% {
+        width: 100%;
+        height: 100%;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+    }
+}
+@keyframes shutterOpen1 {
+    0% {
+        width: 0;
+        height: 1px;
+    }
+    50% {
+        width: 100%;
+        height: 1px;
+    }
+    90% {
+        width: 100%;
+        height: 100%;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+    }
+}
+@-webkit-keyframes shutterOpen2 {
+    60% {
+        width: 120%;
+        height: 0;
+        transform: rotate(5deg);
+    }
+    90% {
+        width: 120%;
+        height: 100%;
+        transform: rotate(-5deg);
+    }
+    100% {
+        width: 120%;
+        height: 100%;
+        transform: rotate(-5deg);
+    }
+}
+@keyframes shutterOpen2 {
+    60% {
+        width: 120%;
+        height: 0;
+        transform: rotate(5deg);
+    }
+    90% {
+        width: 120%;
+        height: 100%;
+        transform: rotate(-5deg);
+    }
+    100% {
+        width: 120%;
+        height: 100%;
+        transform: rotate(-5deg);
+    }
+}
+@-webkit-keyframes contentScale {
+    70% {
+        transform: perspective(800px) scale(0.9) rotateX(15deg);
+    }
+    100% {
+        transform: perspective(800px) scale(1) rotateX(0);
+    }
+}
+@keyframes contentScale {
+    70% {
+        transform: perspective(800px) scale(0.9) rotateX(15deg);
+    }
+    100% {
+        transform: perspective(800px) scale(1) rotateX(0);
+    }
+}
+
+
+
+
+/* マウスカーソル 変更 */
+#cursor {
+    transform: translate(0, 0);
+    pointer-events: none;
+    position: fixed;
+    top: -4px;
+    left: -4px;
+    width: 8px;
+    height: 8px;
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 50%;
+    z-index: 9999;
+    transition: width 0.3s, height 0.3s, top 0.3s, left 0.3s;
+}
+#cursor.hov_ {
+    top: -12px;
+    left: -12px;
+    width: 32px;
+    height: 32px;
+    background: rgba(223, 148, 148, 0.75);
+}
+
+
+
+
+.main-title{
+    width: 100%;
+    height: 80vh;
+    /* background-color: #333; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.took{
+    width: 80%;
+    height: auto;
+    /* background-color: #f0f0f0; */
+    text-align: center;
+}
+.took h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.took p{
+    font-size: 30px;
+}
+
+
+footer{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+    /* background-color: #fff; */
+}

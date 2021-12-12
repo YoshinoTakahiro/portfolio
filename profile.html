@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="./css/profile.css">
         <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     </head>
-    <body>
+    <body oncontextmenu="return false;">
 
         <div id="cursor"></div>
 
@@ -181,6 +181,16 @@
                     cursor.classList.remove('hov_');      
                 });
             }
+        </script>
+
+        <script>
+            window.document.onkeydown = function(event){
+            if(event.keyCode >= 112 && event.keyCode <= 123)
+                {
+                    event.keyCode = null;
+                    event.returnValue = false;
+                }
+            };
         </script>
 
 

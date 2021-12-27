@@ -129,7 +129,7 @@ main .workbox .workbox_images_box {
     width: 126%;
     margin: 0 0 24px 40px;
     border: 1px solid #333;
-    box-shadow: 2px 2px 4px 2px gray;
+    box-shadow: 1px 1px 4px 1px #333;
 }
 
 main .workbox .workbox_images {

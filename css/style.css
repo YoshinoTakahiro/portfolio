@@ -38,7 +38,7 @@ header #title{
     margin-left: 50px;
     font-size: 60px;
     text-decoration: none;
-    color: black;
+    color: #333;
     font-family: 'Rampart One', cursive;
 }
 
@@ -64,19 +64,21 @@ header nav ul li a{
     /* background-color: blueviolet; */
     margin: auto;
     margin-top: 80px;
+    writing-mode: vertical-rl;
 }
 
-.fv p{
+/* .fv p{
     margin-top: 8px;
     float: right;
     writing-mode: vertical-rl;
     color: #333;
-}
+} */
 
 .fv h3{
-    writing-mode: vertical-rl;
+    /* writing-mode: vertical-rl; */
     font-size: 40px;
     margin: auto;
+    color: #333;
 }
 
 
@@ -442,6 +444,19 @@ a.btn_w--orange:hover {
 
 /* 大型デスクトップ レイアウト */
 
+@media screen and (min-width: 1501px) {
+    .fv{
+        width: 100px;
+        height: 75vh;
+        /* background-color: blueviolet; */
+        margin: auto;
+        margin-top: 170px;
+    }
+
+}
+
+
+
 @media screen and (min-width: 1601px) {
     html{
         margin: auto;
@@ -491,12 +506,12 @@ a.btn_w--orange:hover {
         margin-top: 200px;
     }
     
-    .fv p{
+    /* .fv p{
         margin-top: 8px;
         float: right;
         writing-mode: vertical-rl;
         color: #333;
-    }
+    } */
     
     .fv h3{
         writing-mode: vertical-rl;
@@ -509,7 +524,9 @@ a.btn_w--orange:hover {
         height: auto;
         padding: 10px;
         text-align: center;
-        /* background-color: #fff; */
+        background-color: #333;
+        color: #fff;
+    
     }
 
     
@@ -725,5 +742,6 @@ footer{
     height: auto;
     padding: 10px;
     text-align: center;
-    /* background-color: #fff; */
+    background-color: #333;
+    color: #fff;
 }

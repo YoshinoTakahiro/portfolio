@@ -79,9 +79,26 @@ header nav ul li a{
     font-size: 40px;
     margin: auto;
     color: #333;
+    opacity:0;
+    animation-name: first;
+    animation-duration: 5.5s;
+    animation-iteration-count:1;
+    animation-fill-mode: forwards;
 }
-
-
+@keyframes first{
+    0% {
+      opacity: 0;
+      color:#333;
+    }
+    90% {
+     opacity: 1;
+     color:#333;
+    }
+     100% {
+      opacity: 1;
+      color:#333;
+    } 
+}
 
 
 

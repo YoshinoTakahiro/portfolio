@@ -5,7 +5,6 @@
     padding: 0;
     list-style: none;
 
-    cursor: none;
 }
 
 html{
@@ -271,7 +270,7 @@ main .profile .probox .box:last-child p{
 
 #first .capacity .box:last-child{
     width: 60%;
-    height: 30vh;
+    height: 45vh;
     /* background-color: indianred; */
 }
 
@@ -315,7 +314,7 @@ main .profile .probox .box:last-child p{
 
 #first .history .box:last-child{
     width: 60%;
-    height: 30vh;
+    height: 50vh;
     /* background-color: indianred; */
 }
 

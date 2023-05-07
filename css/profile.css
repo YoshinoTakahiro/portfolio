@@ -401,7 +401,6 @@ footer{
 
 @media screen and (min-width: 1601px) {
     html{
-        max-width: 1600px;
         margin: auto;
     }
     header{
@@ -648,6 +647,26 @@ footer{
     
 }
 
+
+@media (width >= 1602px) {
+
+    #first .history .box:last-child{
+        width: 60%;
+        height: 60vh;
+        /* background-color: indianred; */
+    }
+    
+    #first .history .box:last-child h3{
+        margin-top: 30px;
+        font-size: 25px;
+    }
+    footer{
+        width: 100%;
+        height: auto;
+        text-align: center;
+        /* background-color: #fff; */
+    }
+}
 
 
 
